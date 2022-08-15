@@ -11,8 +11,8 @@ $carousel-control-width: 0px;
 
 $container-max-widths: (
   sm: 540px,
-  md: 720px,
-  lg: 960px,
+  md: 768px,
+  lg: 992px,
   xl: 1230px
 );
 
@@ -41,3 +41,5 @@ $card-spacer-x: 15px;
 $card-cap-bg: transparent;
 $link-color: #333;
 $btn-focus-box-shadow: none;
+
+$input-border-radius:1px;

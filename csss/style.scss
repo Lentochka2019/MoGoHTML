@@ -9,12 +9,14 @@ $roboto: 'Roboto', sans-serif;
 @import "../node_modules/bootstrap/scss/functions";
 @import '../node_modules/bootstrap/scss/_variables.scss';
 @import './customvariable';
+@import'../node_modules/bootstrap/scss/bootstrap.scss';
 @import'./navigat';
 @import './team';
 @import'./banner';
 @import'./articleBlock';
 @import'./whatDo';
-@import'../node_modules/bootstrap/scss/bootstrap.scss';
+@import './facts';
+
 
 
 ::-webkit-scrollbar {
@@ -124,8 +126,9 @@ body {
             left: 50%;
             transform: translate(-50%, -50%);
         }
-    }
+    }    
 }
+
 
 //service style for test width
 

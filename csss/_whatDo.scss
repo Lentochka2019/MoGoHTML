@@ -6,9 +6,12 @@
 .card-header {
     h4 {
         text-transform: uppercase;
+        button.collapsed{
+            background-image: url(../img/button-down.png);
+        }
 
         button {
-            background-image: url(../img/button-down.png);
+            background-image: url(../img/button-up.png);
             background-position: 100%;
             background-repeat: no-repeat;
             background-size: 25px 12px;
