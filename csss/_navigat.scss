@@ -1,0 +1,42 @@
+header.main-navigation {
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 1000;
+
+    a {
+        color: $white;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: $montserat;
+        text-transform: uppercase;
+    }
+
+    nav.navbar {
+        width: 100%;
+
+        a:hover,
+        li.nav-item.active a {
+            color: $yellow;
+            text-decoration: none;
+        }
+
+        li:hover {
+            border-bottom: 3px solid $yellow;
+        }
+
+        li.nav-item.active {
+            border-bottom: 3px solid $yellow;
+            ;
+        }
+
+        li.nav-item {
+            padding: 10px 0;
+            margin-right: 50px;
+        }
+
+        .button-img {
+            margin-right: 40px;
+        }
+    }
+}

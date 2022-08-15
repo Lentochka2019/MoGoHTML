@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;1,300&display=swap');
+$red: #f38181;
+$yellow: #fce38a;
+$white: #eaffd0;
+$blue: #95e1d3;
+$gray: #333;
+$montserat: 'Montserrat', sans-serif;
+$roboto: 'Roboto', sans-serif;
+@import "../node_modules/bootstrap/scss/functions";
+@import '../node_modules/bootstrap/scss/_variables.scss';
+@import './customvariable';
+@import'./navigat';
+@import './team';
+@import'./banner';
+@import'./articleBlock';
+@import'./whatDo';
+@import'../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #f5f5f5;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: $blue;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: $blue;
+}
+
+body {
+    h1 {
+        font-weight: 700;
+        font-family: $montserat;
+        margin-bottom: 0;
+        color: $white;
+    }
+
+    h2 {
+        font-family: $montserat;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        font-family: 'Kaushan Script', cursive;
+    }
+
+    h4 {
+        font-family: $montserat;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    ol,
+    ul,
+    dl {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    max-width: 1920px;
+    margin: 0 auto;
+
+    section:not(.banner) {
+        @include media-breakpoint-down(xs) {
+
+            padding: 50px 0;
+
+            .subtitle {
+                margin-bottom: 40px;
+            }
+
+        }
+
+        padding: 90px 0;
+
+        header {
+            text-align: center;
+            line-height: 1.2;
+
+            hr {
+                border: 3px solid $red;
+                width: 60px;
+                background-color: $red;
+                margin: 40px auto;
+            }
+
+            h2 {
+                font-size: 30px;
+                color: $gray;
+            }
+
+            h3 {
+                font-size: 34px;
+                margin-bottom: 20px;
+                color: $gray;
+            }
+
+            .subtitle {
+                color: #999;
+                margin-bottom: 90px;
+            }
+        }
+    }
+
+    figure {
+        position: relative;
+        width: 100%;
+        background: transparent;
+        overflow: hidden;
+
+        >img {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+//service style for test width
+
+@include media-breakpoint-up(md) {
+    .block-or {
+        position: absolute;
+        display: flex;
+        margin: 0;
+        width: 1200px;
+        height: 4000px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .block-or>div {
+        width: 50%;
+        border: 1px solid red;
+    }
+
+}
+
+section:not(.banner) {
+    border-bottom: 1px solid red;
+}
