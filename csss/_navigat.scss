@@ -35,40 +35,63 @@ header.main-navigation {
     width: 100%;
     z-index: 1000;
 
-    a {
-        color: $white;
-        font-size: 14px;
-        font-weight: 400;
-        font-family: $montserat;
-        text-transform: uppercase;
-    }
-
     nav.navbar {
         width: 100%;
+        h1 
+        {
+            a {
+                    color: $white;
+                }
+            
+                a:hover {
+                    color: $yellow;
+                    text-decoration: none;
+                }
+                a:active {
+                    color: $yellow;
+                    text-decoration: none;
+                }
+            }
+        .navbar-nav
+        {
+            a{
+                color: $white;
+                font-size: 14px;
+                font-weight: 400;
+                font-family: $montserat;
+                text-transform: uppercase;
+            }
 
-        a:hover,
-        li.nav-item.active a,
-        li:hover a {
-            color: $yellow;
-            text-decoration: none;
-        }
+            a:hover,
+            li.nav-item.active a,
+            li:hover a {
+                color: $yellow;
+                text-decoration: none;
+            }
+    
+            li:hover {
+                border-bottom: 3px solid $yellow;
+                padding-bottom: 8px!important;
+            }
+    
+            li.nav-item.active {
+                border-bottom: 3px solid $yellow;
+                ;
+            }
+    
+            li.nav-item {
+                padding: 10px 0 11px;
+                margin-right: 50px;
+            }
+    
 
-        li:hover {
-            border-bottom: 3px solid $yellow;
-        }
-
-        li.nav-item.active {
-            border-bottom: 3px solid $yellow;
-            ;
-        }
-
-        li.nav-item {
-            padding: 10px 0;
-            margin-right: 50px;
         }
 
         .button-img {
             margin-right: 40px;
+        }
+        img.button-search:hover {
+            cursor: pointer;
         }
 
         .navbar-toggler {
@@ -84,4 +107,3 @@ header.main-navigation {
 
     }
 }
-

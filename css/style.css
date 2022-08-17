@@ -9343,34 +9343,49 @@ header.main-navigation {
   width: 100%;
   z-index: 1000;
 }
-header.main-navigation a {
+header.main-navigation nav.navbar {
+  width: 100%;
+}
+header.main-navigation nav.navbar h1 a {
+  color: #eaffd0;
+}
+header.main-navigation nav.navbar h1 a:hover {
+  color: #fce38a;
+  text-decoration: none;
+}
+header.main-navigation nav.navbar h1 a:active {
+  color: #fce38a;
+  text-decoration: none;
+}
+header.main-navigation nav.navbar .navbar-nav a {
   color: #eaffd0;
   font-size: 14px;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
 }
-header.main-navigation nav.navbar {
-  width: 100%;
-}
-header.main-navigation nav.navbar a:hover,
-header.main-navigation nav.navbar li.nav-item.active a,
-header.main-navigation nav.navbar li:hover a {
+header.main-navigation nav.navbar .navbar-nav a:hover,
+header.main-navigation nav.navbar .navbar-nav li.nav-item.active a,
+header.main-navigation nav.navbar .navbar-nav li:hover a {
   color: #fce38a;
   text-decoration: none;
 }
-header.main-navigation nav.navbar li:hover {
+header.main-navigation nav.navbar .navbar-nav li:hover {
+  border-bottom: 3px solid #fce38a;
+  padding-bottom: 8px !important;
+}
+header.main-navigation nav.navbar .navbar-nav li.nav-item.active {
   border-bottom: 3px solid #fce38a;
 }
-header.main-navigation nav.navbar li.nav-item.active {
-  border-bottom: 3px solid #fce38a;
-}
-header.main-navigation nav.navbar li.nav-item {
-  padding: 10px 0;
+header.main-navigation nav.navbar .navbar-nav li.nav-item {
+  padding: 10px 0 11px;
   margin-right: 50px;
 }
 header.main-navigation nav.navbar .button-img {
   margin-right: 40px;
+}
+header.main-navigation nav.navbar img.button-search:hover {
+  cursor: pointer;
 }
 header.main-navigation nav.navbar .navbar-toggler {
   background-color: #eaffd0;
